@@ -1,0 +1,40 @@
+*{padding:0;margin:0;}
+body{background-color: #efefef; font-family:Arial,Helvetica,sans-serif;color:#464646;}
+.container{width:954px;margin:0 auto; overflow: hidden;}
+
+#header{height:120px;}
+#footer{margin:0 auto; font-size: 12px;text-align:center; padding:10px;}
+
+#nav{padding: 0 12px;text-align:center;overflow:hidden;background:url('img/navbg.png');}
+#nav ul {list-style-type:none;}
+#nav li{height:50px;float:left;padding:14px 0 0;}
+#nav li:hover{height: 35px; ; background:url('img/navhov.gif');}
+#nav li a{text-decoration:none;color:#fff; padding:20px;}
+#logo{float:left;}
+#nav #cartlink {background: url("img/cart.png") no-repeat scroll 17px 20px transparent; padding-left:45px;}
+
+#user {background: url("img/userinfo.png") no-repeat; float: right; width: 270px; height: 116px; color: #464646;}
+#user a{text-decoration: none; color: #464646; font-size: 15px;}
+#user input{width: 110px; margin-right: 11px;}
+#user #forgotpw{float: right; padding-right: 12px; font-size: 10px;}
+#loginfields{float: left; margin-left: 12px; margin-top: 22px;}
+#loginbuttons{float: right; margin-right: 12px; margin-top: 9px;}
+#loginbuttons td{float: left; padding-left: 22px;}
+
+.boxhead{ background: url('img/boxheader.gif'); height: 42px;}
+.boxhead h1 {padding: 10px;font-size: 18px; font-weight:bold;}
+.boxhleft{float: left; background: url('img/bhleft.gif') no-repeat; min-width:8px; height:42px;}
+.boxhright{float: right; background: url('img/bhright.gif') no-repeat; min-width:8px; height:42px;}
+.boxcontent{background: #FFF; padding: 10px; border-left: 3px solid #c8c8c8; border-right: 3px solid #c8c8c8;}
+.boxfoot{ background: #FFF;height: 3px;border-bottom: 3px solid #c8c8c8;}
+.boxfleft{float: left; background: url('img/bfleft.gif') no-repeat; width:7px; height:42px;}
+.boxfright{float: right; background: url('img/bfright.gif') no-repeat; width:7px; height:42px;}
+
+.leftcolumn{float:left;}
+.rightcolumn{float:right;}
+
+#popularitems{width:330px;height:170px;float:left; padding-top: 10px; padding-right: 15px;}
+#newitems{width:330px;height:170px;float:left; padding-top: 10px; padding-right: 15px;}
+#goals{width:264px;height:170px;float:left; padding-top: 10px;}
+#about{width:615px;float:left; padding-top: 10px; padding-right: 15px;}
+#facebook{width:324px;height:170px;float:left; padding-top: 10px;}
