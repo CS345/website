@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
+<%@ taglib prefix="cs345" tagdir="/WEB-INF/tags"%>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -70,46 +72,24 @@
 	<!--End Website Header-->
 	<!--Begin Page Content-->
 	<div class="container">
-		<div id="categories">
-			<div class="boxhead">
-				<div class="boxhleft">
-					<h1>Admin Options</h1>
-				</div>
-				<div class="boxhright"></div>
-			</div>
-			<div class="boxcontent">
-				<ul class="sidenav">
-					<li><a href=#>Upload File</a>
-					</li>
-					<li><a href=#>Edit Products</a>
-					</li>
-					<li><a href=#>Log Out</a>
-					</li>
-				</ul>
-			</div>
-			<div class=boxfoot>
-				<div class="boxfleft"></div>
-				<div class="boxfright"></div>
-			</div>
-		</div>
-		<div id="results">
-			<div class="boxhead">
-				<div class="boxhleft">
-					<h1>Content</h1>
-				</div>
-				<div class="boxhright"></div>
-			</div>
-			<div class="boxcontent">
-				<form action="dbUploader" method="POST">
-					<input type="FILE"/>
-					<input type="submit" value="Upload"/>
-				</form>
-			</div>
-			<div class=boxfoot>
-				<div class="boxfleft"></div>
-				<div class="boxfright"></div>
-			</div>
-		</div>
+
+		<cs345:box title="Admin Options" id="categories">
+			<ul class="sidenav">
+				<li><a href=#>Upload File</a>
+				</li>
+				<li><a href=#>Edit Products</a>
+				</li>
+				<li><a href=#>Log Out</a>
+				</li>
+			</ul>
+		</cs345:box>
+
+		<cs345:box title="Upload Database File" id="dbUploader">
+			<form enctype="multipart/form-data" action="dbUploader" method="POST">
+				<input type="FILE" /> <input type="submit" value="Upload" />
+			</form>
+		</cs345:box>
+
 	</div>
 	<!--End Page Content-->
 	<!--Begin Website Footer-->
