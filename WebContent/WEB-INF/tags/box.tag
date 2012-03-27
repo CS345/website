@@ -10,7 +10,7 @@
 		<div class="boxhright"></div>
 	</div>
 	<div class="boxcontent">
-		<p><jsp:doBody/></p>
+		<jsp:doBody/>
 	</div>
 	<div class=boxfoot>
 		<div class="boxfleft"></div>
