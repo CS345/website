@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
+<%@ taglib prefix="cs345" tagdir="/WEB-INF/tags" %> 
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -56,81 +58,26 @@
 	<!--End Website Header-->
 	<!--Begin Page Content-->
 	<div class="container">
-		<div id="popularitems">
-			<div class="boxhead">
-				<div class="boxhleft">
-					<h1>Popular Items</h1>
-				</div>
-				<div class="boxhright"></div>
-			</div>
-			<div class="boxcontent">
-				<p>Content</p>
-			</div>
-			<div class=boxfoot>
-				<div class="boxfleft"></div>
-				<div class="boxfright"></div>
-			</div>
-		</div>
-		<div id="newitems">
-			<div class="boxhead">
-				<div class="boxhleft">
-					<h1>New Items</h1>
-				</div>
-				<div class="boxhright"></div>
-			</div>
-			<div class="boxcontent">
-				<p>Content</p>
-			</div>
-			<div class=boxfoot>
-				<div class="boxfleft"></div>
-				<div class="boxfright"></div>
-			</div>
-		</div>
-		<div id="goals">
-			<div class="boxhead">
-				<div class="boxhleft">
-					<h1>Co-Op Goals</h1>
-				</div>
-				<div class="boxhright"></div>
-			</div>
-			<div class="boxcontent">
-				<p>Content</p>
-			</div>
-			<div class=boxfoot>
-				<div class="boxfleft"></div>
-				<div class="boxfright"></div>
-			</div>
-		</div>
-		<div id="about">
-			<div class="boxhead">
-				<div class="boxhleft">
-					<h1>About</h1>
-				</div>
-				<div class="boxhright"></div>
-			</div>
-			<div class="boxcontent">
-				<p>Content</p>
-			</div>
-			<div class=boxfoot>
-				<div class="boxfleft"></div>
-				<div class="boxfright"></div>
-			</div>
-		</div>
-		<div id="facebook">
-			<div class="boxhead">
-				<div class="boxhleft">
-					<h1>Facebook Feed</h1>
-				</div>
-				<div class="boxhright"></div>
-			</div>
-			<div class="boxcontent">
-				<p>Content</p>
-			</div>
-			<div class=boxfoot>
-				<div class="boxfleft"></div>
-				<div class="boxfright"></div>
-			</div>
-		</div>
+		<cs345:box title="Popular Items" id="popularitems">
+		Content
+		</cs345:box>
+		
+		<cs345:box title="New Items" id="newitems">
+		Content
+		</cs345:box>
+		
+		<cs345:box title="Co-Op Goals" id="goals">
+		Content
+		</cs345:box>
+
+		<cs345:box title="About" id="about">
+		Content
+		</cs345:box>
+
+		<cs345:box title="Facebook Feed" id="facebook">
+		Content
+		</cs345:box>
+		
 	</div>
 	<!--End Page Content-->
 	<!--Begin Website Footer-->
