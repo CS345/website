@@ -71,9 +71,9 @@ body{background-color: #efefef; font-family:Arial,Helvetica,sans-serif;color:#46
 	top: 20%;
 }
 #goal_outer #bar_container #bar{
-	width:50%;
 	height:100%;
 	max-width:100%;
+	min-width:10%;
 	
 	
 -moz-box-shadow: 0px 0px 2px #000000;
