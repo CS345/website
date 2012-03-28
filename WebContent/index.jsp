@@ -68,7 +68,7 @@
 		
 		<cs345:box title="Co-Op Goals" id="goals">
 			<!-- Should get percentage dynamically -->
-			<cs345:goal_bar percent="20"></cs345:goal_bar>
+			<cs345:goal_bar percent="75"/>
 		</cs345:box>
 
 		<cs345:box title="About" id="about">
