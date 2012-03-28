@@ -67,7 +67,7 @@
 		</cs345:box>
 		
 		<cs345:box title="Co-Op Goals" id="goals">
-		Content
+			<cs345:goal_bar></cs345:goal_bar>
 		</cs345:box>
 
 		<cs345:box title="About" id="about">
