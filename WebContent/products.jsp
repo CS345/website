@@ -95,7 +95,7 @@
 			<br>
 			<h4>Subcategories:</h4>
 			<ul class="sidenav">
-				<li><a href=#>Vegitables</a>
+				<li><a href=#>Vegetables</a>
 				</li>
 				<li><a href=#>Grains</a>
 				</li>
@@ -106,9 +106,17 @@
 			</ul>
 		</cs345:box>
 		<cs345:box title="Results" id="results">
-			<cs345:product productName="item1" id="item1"></cs345:product>
-			<cs345:product productName="item2" id="item2"></cs345:product>
-			<cs345:product productName="item3" id="item3"></cs345:product>
+                    <div class="product_header">     
+                        <b>Product</b>
+                        <b>ID</b>
+                        <b>Size</b>
+                        <b id="price_header">Price</b>
+                        <b>Qty</b>
+                    </div>
+                    <cs345:product productName="Flour" id="1234" productSize="5 lbs" price="$9.99" quantity="1"></cs345:product>
+                    <cs345:product productName="Potatoes" id="6789" productSize="3 lbs" price="$2.99" quantity="1"></cs345:product>
+                    <cs345:product productName="Carrots" id="4536" productSize="2 lbs" price="$1.99" quantity="1"></cs345:product>
+                    <cs345:product productName="Item with really long name" id="5243" productSize="1337 lbs" price="$99.99" quantity="1"></cs345:product>
 		</cs345:box>
 	</div>
 	<!--End Page Content-->
