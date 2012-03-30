@@ -85,7 +85,7 @@
 			<ul class="sidenav">
 				<li><a href=#>Organic (All)</a>
 				</li>
-				<li><a href=#>Vegitarian</a>
+				<li><a href=#>Vegetarian</a>
 				</li>
 				<li><a href=#>Vegan</a>
 				</li>
