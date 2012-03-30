@@ -6,17 +6,17 @@
 <%@ attribute name="quantity" required="true" rtexprvalue="true" %>
 
 
-<div id=${id} class="product">
+<div id="product_${id}" class="product">
     <div>
-        <table class="product_table">
+        <table id="general_product_table" class="product_table">
             <tr>
-                <td><div class="product_name">${productName}</div></td>
-                <td id="id">${id}</td>
-                <td id="size">${productSize}</td>
-                <td id="price">${price}</td>
+                <td><div id="product_name">${productName}</div></td>
+                <td id="product_id">${id}</td>
+                <td id="product_size">${productSize}</td>
+                <td id="product_price">${price}</td>
                 <td>
                     <form action="#" method="post">
-                        <input id="qty" type="text" name="quantity" value="${quantity}">
+                        <input id="product_qty" type="text" name="quantity" value="${quantity}">
                         <input type="submit" name="add" value="Add to Cart">
                     </form>
                 </td>

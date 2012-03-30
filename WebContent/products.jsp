@@ -73,13 +73,17 @@
 	<div class="container">
 
 		<cs345:box title="Co-Op Goals" id="goals2">
-		Content
+			<cs345:goal_bar percent="55"/>
+			<cs345:goal_bar percent="75"/>
+			<cs345:goal_bar percent="35"/>
 		</cs345:box>
 		
 		<cs345:box title="Search" id="search">
 		Search
 		</cs345:box>
+		</div>
 		
+		<div class="container">
 		<cs345:box title="Categories" id="categories">
 			<h4>Types:</h4>
 			<ul class="sidenav">

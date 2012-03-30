@@ -19,10 +19,12 @@
   </servlet-mapping>
   
   
-  <context-param> 
+<context-param> 
     <description>Location to store uploaded file</description> 
     <param-name>file-upload</param-name> 
-    <param-value>style.css</param-value> 
+    <param-value>
+         /Users/orenr61/Desktop/new/
+     </param-value> 
 </context-param>
 
 
