@@ -85,8 +85,10 @@
 		</cs345:box>
 
 		<cs345:box title="Upload Database File" id="dbUploader">
-			<form enctype="multipart/form-data" action="dbUploader" method="POST">
-				<input type="FILE" /> <input type="submit" value="Upload" />
+			<form id="dbUpload" action="dbUploader" method="POST">
+				<label id="dbTextInputLabel" for="dbTextInputBox">Copy and paste the database file here:</label>
+				<textarea id="dbTextInputBox" name="dbFileText"></textarea>
+				<input type="submit" value="Upload" />
 			</form>
 		</cs345:box>
 

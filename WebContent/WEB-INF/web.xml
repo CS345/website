@@ -8,26 +8,21 @@
     <servlet-name>uploadDbFile</servlet-name>
     <url-pattern>/upload</url-pattern>
   </servlet-mapping>
-  
   <servlet>
     <servlet-name>db-uploader</servlet-name>
-    <servlet-class>cs345.servlets.DbFileUploader</servlet-class>
+    <servlet-class>cs345.servlets.DbFileUpload</servlet-class>
   </servlet>
   <servlet-mapping>
-  	<servlet-name>db-uploader</servlet-name>
-  	<url-pattern>/dbUploader</url-pattern>
+    <servlet-name>db-uploader</servlet-name>
+    <url-pattern>/dbUploader</url-pattern>
   </servlet-mapping>
-  
-  
-<context-param> 
-    <description>Location to store uploaded file</description> 
-    <param-name>file-upload</param-name> 
+  <context-param>
+    <description>Location to store uploaded file</description>
+    <param-name>file-upload</param-name>
     <param-value>
          /Users/orenr61/Desktop/new/
-     </param-value> 
-</context-param>
-
-
+     </param-value>
+  </context-param>
   <welcome-file-list>
     <welcome-file>index.jsp</welcome-file>
   </welcome-file-list>

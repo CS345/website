@@ -44,6 +44,7 @@ body{background-color: #efefef; font-family:Arial,Helvetica,sans-serif;color:#46
 #categories{width:264px;float:left; padding-top: 10px; padding-right: 15px;}
 #results{width:675px;float:left; padding-top: 10px;}
 #dbUploader{width:675px;float:left; padding-top: 10px;}
+form#dbUpload textarea{width:100%;height:100px;min-height:400px;}
 
 .sidenav{list-style-type:none;padding-left: 12px;}
 .sidenav a {color: #444; text-decoration:none;}
