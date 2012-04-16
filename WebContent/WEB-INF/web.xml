@@ -10,7 +10,7 @@
   </servlet-mapping>
   <servlet>
     <servlet-name>db-uploader</servlet-name>
-    <servlet-class>cs345.servlets.DbFileUpload</servlet-class>
+    <servlet-class>cs345.servlets.DbFileUploader</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>db-uploader</servlet-name>
