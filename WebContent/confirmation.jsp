@@ -72,8 +72,8 @@
 	<!--Begin Page Content-->
 	<div class="container">
 
-		<cs345:box title="Welcome" id="activation_msg">
-			<div>Thank you for registering!  Your account has been activated.</div>
+		<cs345:box title="Welcome" id="activation_msg_box">
+			<div id="activation_msg">Thank you for registering!  Your account has been activated.</div>
 		</cs345:box>
 
 	</div>
