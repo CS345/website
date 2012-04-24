@@ -88,9 +88,6 @@
 
 					<div class="form_element">
 						<label for="bucs_num_input">Bucs Number: </label>
-					</div>
-
-					<div class="form_element">
 						<input type="text" name="bucs_num" id="bucs_num_input" />
 					</div>
 
