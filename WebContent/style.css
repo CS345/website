@@ -62,3 +62,5 @@ form#dbUpload textarea{width:100%;height:100px;min-height:400px;}
 .product_table input {width: 78px;}
 .product_table #product_qty {width: 30px;}
 .product_table tr { background-color:#eee; }
+
+#admin_product_update {margin-left: 517px;}

@@ -115,19 +115,15 @@
                         <b>ID</b>
                         <b>Size</b>
                         <b id="price_header">Price</b>
-                        <b>Qty</b>
+                        <b>Show</b>
                     </div>
-                    <script  type="text/javascript">
-                        var i = 0;
-                        for (i=0;i<10;i++){
-                    </script>
-                    <cs345:product productName="item" id="5" productSize="1 lb" price="$1.00" quantity="1"></cs345:product>
-                    <script  type="text/javascript">}</script>
-                    
-                    <cs345:product productName="Flour" id="1234" productSize="5 lbs" price="$9.99" quantity="1"></cs345:product>
-                    <cs345:product productName="Potatoes" id="6789" productSize="3 lbs" price="$2.99" quantity="1"></cs345:product>
-                    <cs345:product productName="Carrots" id="4536" productSize="2 lbs" price="$1.99" quantity="1"></cs345:product>
-                    <cs345:product productName="Item with really long name" id="5243" productSize="1337 lbs" price="$99.99" quantity="1"></cs345:product>
+                    <cs345:admin_product productName="Flour" id="1234" productSize="5 lbs" price="$9.99"></cs345:admin_product>
+                    <cs345:admin_product productName="Potatoes" id="6789" productSize="3 lbs" price="$2.99"></cs345:admin_product>
+                    <cs345:admin_product productName="Carrots" id="4536" productSize="2 lbs" price="$1.99"></cs345:admin_product>
+                    <cs345:admin_product productName="Item with really long name" id="5243" productSize="1337 lbs" price="$99.99"></cs345:admin_product>
+                    <div id="admin_product_update">
+                        <form action="#" method="post"><input type="submit" name="update" value="Update"></form>
+                    </div>
 		</cs345:box>
 	</div>
 	<!--End Page Content-->
