@@ -87,6 +87,7 @@
 					<input type="password" name="confirm_password" id="confirm_password_input"/>
 					<label for="bucs_num_input">Bucs Number: </label>
 					<input type="text" name="bucs_num" id="bucs_num_input"/>
+					<input type="submit" value="Submit"/>
 				</form>
 			</div>
 		</cs345:box>
