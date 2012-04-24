@@ -16,6 +16,17 @@
     <servlet-name>db-uploader</servlet-name>
     <url-pattern>/dbUploader</url-pattern>
   </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>register</servlet-name>
+    <servlet-class>cs345.servlets.Register</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>register</servlet-name>
+    <url-pattern>/register</url-pattern>
+  </servlet-mapping>
+  
+  
   <context-param>
     <description>Location to store uploaded file</description>
     <param-name>file-upload</param-name>
