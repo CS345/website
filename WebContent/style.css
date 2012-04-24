@@ -68,4 +68,6 @@ form#dbUpload textarea{width:100%;height:100px;min-height:400px;}
 	text-align:center;
 	margin: 3% 0 0 0;
 }
-form#registration_form div.form_element {width:100%; float:left; text-aligh:center;}
+form#registration_form div.form_element {width:100%; text-align:center; margin: 12px 0;}
+form#registration_form div.form_element input {height:18px; font-size:13px;}
+
