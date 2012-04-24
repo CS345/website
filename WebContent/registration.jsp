@@ -23,23 +23,18 @@
 						<td>Password</td>
 					</tr>
 					<tr>
-						<td><input type="text" />
-						</td>
-						<td><input type="password" />
-						</td>
+						<td><input type="text" /></td>
+						<td><input type="password" /></td>
 					</tr>
 					<tr>
 						<td></td>
-						<td><a id="forgotpw" href="#">Forgot password?</a>
-						</td>
+						<td><a id="forgotpw" href="#">Forgot password?</a></td>
 					</tr>
 				</table>
 				<table id="loginbuttons">
 					<tr>
-						<td><a href="#">Register</a>
-						</td>
-						<td><a href="#">Sign-In</a>
-						</td>
+						<td><a href="#">Register</a></td>
+						<td><a href="#">Sign-In</a></td>
 					</tr>
 				</table>
 			</div>
@@ -47,24 +42,16 @@
 		</div>
 		<div id="nav">
 			<ul class="leftcolumn">
-				<li><a href="#">Home</a>
-				</li>
-				<li><a href="#">About</a>
-				</li>
-				<li><a href="#">Browse</a>
-				</li>
-				<li><a href="#">Popular</a>
-				</li>
-				<li><a href="#">New</a>
-				</li>
-				<li><a href="#">Search</a>
-				</li>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Browse</a></li>
+				<li><a href="#">Popular</a></li>
+				<li><a href="#">New</a></li>
+				<li><a href="#">Search</a></li>
 			</ul>
 			<ul class="rightcolumn">
-				<li><a href="#" id="cartlink">My Cart (0)</a>
-				</li>
-				<li><a href="#">Checkout</a>
-				</li>
+				<li><a href="#" id="cartlink">My Cart (0)</a></li>
+				<li><a href="#">Checkout</a></li>
 			</ul>
 		</div>
 	</div>
@@ -75,19 +62,41 @@
 		<cs345:box title="Registeration" id="registration_box">
 			<div id="registration_form_box">
 				<form id="reigstration_form">
-					<label for="first_name_input">First Name: </label>
-					<input type="text" name="first_name" id="first_name_input"/>
-					<label for="last_name_input">Last Name: </label>
-					<input type="text" name="last_name" id="last_name_input"/>
-					<label for="email_input">Email Address: </label>
-					<input type="text" name="email" id="email_input"/>
-					<label for="password_input">Password: </label>
-					<input type="password" name="password" id="password_input"/>
-					<label for="confirm_password_input">Confirm Password: </label>
-					<input type="password" name="confirm_password" id="confirm_password_input"/>
-					<label for="bucs_num_input">Bucs Number: </label>
-					<input type="text" name="bucs_num" id="bucs_num_input"/>
-					<input type="submit" value="Submit"/>
+					<div class="form_element">
+						<label for="first_name_input">First Name: </label> <input
+							type="text" name="first_name" id="first_name_input" />
+					</div>
+					<div class="form_element">
+						<label for="last_name_input">Last Name: </label> <input
+							type="text" name="last_name" id="last_name_input" />
+					</div>
+					<div class="form_element">
+						<label for="email_input">Email Address: </label> <input
+							type="text" name="email" id="email_input" />
+					</div>
+
+					<div class="form_element">
+						<label for="password_input">Password: </label> <input
+							type="password" name="password" id="password_input" />
+					</div>
+
+					<div class="form_element">
+						<label for="confirm_password_input">Confirm Password: </label> <input
+							type="password" name="confirm_password"
+							id="confirm_password_input" />
+					</div>
+
+					<div class="form_element">
+						<label for="bucs_num_input">Bucs Number: </label>
+					</div>
+
+					<div class="form_element">
+						<input type="text" name="bucs_num" id="bucs_num_input" />
+					</div>
+
+					<div class="form_element">
+						<input type="submit" value="Submit" />
+					</div>
 				</form>
 			</div>
 		</cs345:box>
