@@ -61,7 +61,7 @@
 
 		<cs345:box title="Registeration" id="registration_box">
 			<div id="registration_form_box">
-				<form id="registration_form">
+				<form id="registration_form" action="register" method="POST">
 					<div class="form_element">
 						<label for="first_name_input">First Name: </label> <input
 							type="text" name="first_name" id="first_name_input" />
