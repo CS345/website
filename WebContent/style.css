@@ -64,6 +64,7 @@ form#dbUpload textarea{width:100%;height:100px;min-height:400px;}
 .product_table tr { background-color:#eee; }
 
 #admin_product_update {margin-left: 517px;}
+
 #activation_msg {
 	text-align:center;
 	margin: 3% 0 0 0;
@@ -73,3 +74,5 @@ form#registration_form div.form_element {width:100%; text-align:center; margin: 
 form#registration_form div.form_element input {height:18px; font-size:13px; float:right;}
 form#registration_form div.form_element label {float:left;}
 
+
+#profile_box{width:675px;float:left; padding-top: 10px;}
