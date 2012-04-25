@@ -7,6 +7,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
 <title>Binghamton Food Co-op</title>
 <link rel='stylesheet' href='style.css' />
 </head>
@@ -73,66 +74,21 @@
 	<!--Begin Page Content-->
 	<div class="container">
 
-		<cs345:box title="Co-Op Goals" id="goals2">
-			<cs345:goal_bar percent="55"/>
-			<cs345:goal_bar percent="75"/>
-			<cs345:goal_bar percent="35"/>
-		</cs345:box>
-		
-		<cs345:box title="Search" id="search">
-		Search
-		</cs345:box>
-		</div>
-		
-		<div class="container">
-		<cs345:box title="Categories" id="categories">
-			<h4>Types:</h4>
-			<ul class="sidenav">
-				<li><a href=#>Organic (All)</a>
-				</li>
-				<li><a href=#>Vegetarian</a>
-				</li>
-				<li><a href=#>Vegan</a>
-				</li>
-				<li><a href=#>Gluten-Free</a>
-				</li>
-			</ul>
-			<br>
-			<h4>Subcategories:</h4>
-			<ul class="sidenav">
-				<li><a href=#>Vegetables</a>
-				</li>
-				<li><a href=#>Grains</a>
-				</li>
-				<li><a href=#>Sweets</a>
-				</li>
-				<li><a href=#>Etc</a>
-				</li>
-			</ul>
-		</cs345:box>
-		<cs345:box title="Results" id="results">
-                    <div class="product_header">     
-                        <b>Product</b>
-                        <b>ID</b>
-                        <b>Size</b>
-                        <b id="price_header">Price</b>
-                        <b>Qty</b>
-                    </div>
+                <jsp:include page="SupportingModules/account_options_sidebar.jsp" />
+
+		<cs345:box title="Profile" id="profile_box">
+			
+                    <form>
                         
-                    
-                    
-                    <cs345:product productName="Item with really long name" id="5243" productSize="1337 lbs" price="$99.99" quantity="1"></cs345:product>
-                    
-                    
-                    
+                    </form>
                     
 		</cs345:box>
+
 	</div>
 	<!--End Page Content-->
 	<!--Begin Website Footer-->
 	<div id="footer">&copy; Copyright 2012 SUNY Binghamton Food
 		Co-Op. All Rights Reserved.</div>
 	<!--End Website Footer-->
-
 </body>
 </html>
