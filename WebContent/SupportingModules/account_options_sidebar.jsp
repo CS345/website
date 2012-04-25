@@ -5,7 +5,7 @@
 <link rel='stylesheet' href='style.css' />
 <cs345:box title="Account Options" id="categories">
     <ul class="sidenav">
-	<li><a href=#>Change Profile</a>
+	<li><a href=#>View Profile</a>
 	</li>
 	<li><a href=#>Log Out</a>
 	</li>

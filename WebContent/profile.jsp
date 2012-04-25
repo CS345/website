@@ -6,6 +6,8 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
     <head>
+        <script src="jQuery.js" type="text/javascript"></script>
+        <script src="change_profile_value.js" type="text/javascript"></script>
         <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
         <title>Insert title here</title>
         <title>Binghamton Food Co-op</title>
@@ -91,18 +93,20 @@
                         <label for="email_input">Email Address: </label> <input
                             type="text" name="email" id="email_input" />
                     </div>
-
-                   <div class="form_element">
+                   
+                   
+                   <div class="form_element show_on_edit">
+                 
                         <label for="password_input">Old Password: </label> <input
                             type="password" name="password" id="password_input" />
                     </div>
                    
-                    <div class="form_element">
+                    <div class="form_element show_on_edit">
                         <label for="password_input">New Password: </label> <input
                             type="password" name="password" id="password_input" />
                     </div>
 
-                    <div class="form_element">
+                    <div class="form_element show_on_edit">
                         <label for="confirm_password_input">Confirm Password: </label> <input
                             type="password" name="confirm_password"
                             id="confirm_password_input" />
@@ -113,7 +117,11 @@
                         <input type="text" name="bucs_num" id="bucs_num_input" />
                     </div>
 
-                    <div class="form_element">
+                   <div class="form_element hide_on_edit">
+                        <input id="edit_form" type="button" value="Edit" />
+                    </div>
+                   
+                    <div class="form_element show_on_edit">
                         <input type="submit" value="Submit" />
                     </div>
                 </form>
