@@ -80,7 +80,7 @@
 
             <cs345:box title="Profile" id="profile_box">
 
-               <form id="change_profile_form" action="change_profile" method="POST" readonly="readonly">   <!-- action defined later-->
+                <form id="change_profile_form" action="change_profile" method="POST" readonly="readonly">   <!-- action defined later-->
                     <div class="form_element">
                         <label for="first_name_input">First Name: </label> <input
                             type="text" name="first_name" id="first_name_input" />
@@ -93,14 +93,12 @@
                         <label for="email_input">Email Address: </label> <input
                             type="text" name="email" id="email_input" />
                     </div>
-                   
-                   
-                   <div class="form_element show_on_edit">
-                 
+
+                    <div class="form_element show_on_edit">
                         <label for="password_input">Old Password: </label> <input
                             type="password" name="password" id="password_input" />
                     </div>
-                   
+
                     <div class="form_element show_on_edit">
                         <label for="password_input">New Password: </label> <input
                             type="password" name="password" id="password_input" />
@@ -117,10 +115,10 @@
                         <input type="text" name="bucs_num" id="bucs_num_input" />
                     </div>
 
-                   <div class="form_element hide_on_edit">
+                    <div class="form_element hide_on_edit">
                         <input id="edit_form" type="button" value="Edit" />
                     </div>
-                   
+
                     <div class="form_element show_on_edit">
                         <input type="submit" value="Submit" />
                     </div>
