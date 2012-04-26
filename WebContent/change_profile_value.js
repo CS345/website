@@ -6,8 +6,7 @@ $(document).ready(function() {
 $(document).ready(function() {
    $("#edit_form").click(function(){
        $("form#change_profile_form div.form_element input").attr("readonly", null);
-       $(".show_on_edit").css("display", "inline-block");
-       $(".show_on_edit").css("height", "0");
+       $(".show_on_edit").css("display", "block");
        $(".hide_on_edit").css("display", "none");
-   }); 
+   });
 });
