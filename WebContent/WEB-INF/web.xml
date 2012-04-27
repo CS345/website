@@ -26,6 +26,15 @@
     <url-pattern>/register</url-pattern>
   </servlet-mapping>
   
+    <servlet>
+    <servlet-name>EditProfile</servlet-name>
+    <servlet-class>cs345.servlets.ProfileEditor</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EditProfile</servlet-name>
+    <url-pattern>/EditProfile</url-pattern>
+  </servlet-mapping>
+  
   
   <context-param>
     <description>Location to store uploaded file</description>
