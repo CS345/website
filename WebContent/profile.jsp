@@ -82,19 +82,24 @@
 
                 <form id="change_profile_form" action="change_profile" method="POST" readonly="readonly">   <!-- action defined later-->
                     <div class="form_element">
-                        <label for="first_name_input">First Name: </label> <input
-                            type="text" name="first_name" id="first_name_input" />
+                        <label for="first_name_input">First Name: </label> 
+                        <input type="text" name="first_name" id="first_name_input" value="Oren"/>
                     </div>
                     <div class="form_element">
-                        <label for="last_name_input">Last Name: </label> <input
-                            type="text" name="last_name" id="last_name_input" />
+                        <label for="last_name_input">Last Name: </label> 
+                        <input type="text" name="last_name" id="last_name_input" value="Rasekh"/>
                     </div>
                     <div class="form_element">
-                        <label for="email_input">Email Address: </label> <input
-                            type="text" name="email" id="email_input" />
+                        <label for="email_input">Email Address: </label> 
+                        <input type="text" name="email" id="email_input" value="orasekh1@binghamton.edu"/>
                     </div>
 
-                    <div class="form_element show_on_edit">
+                    <div class="form_element">
+                        <label for="bucs_num_input">Bucs Number: </label>
+                        <input type="text" name="bucs_num" id="bucs_num_input" value="123 456 7890"/>
+                    </div>
+                    
+                                        <div class="form_element show_on_edit">
                         <label for="password_input">Old Password: </label> <input
                             type="password" name="password" id="password_input" />
                     </div>
@@ -108,11 +113,6 @@
                         <label for="confirm_password_input">Confirm Password: </label> <input
                             type="password" name="confirm_password"
                             id="confirm_password_input" />
-                    </div>
-
-                    <div class="form_element">
-                        <label for="bucs_num_input">Bucs Number: </label>
-                        <input type="text" name="bucs_num" id="bucs_num_input" />
                     </div>
 
                     <div class="form_element hide_on_edit">

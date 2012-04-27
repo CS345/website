@@ -66,8 +66,8 @@ form#dbUpload textarea{width:100%;height:100px;min-height:400px;}
 #admin_product_update {margin-left: 517px;}
 
 #activation_msg {
-	text-align:center;
-	margin: 3% 0 0 0;
+    text-align:center;
+    margin: 3% 0 0 0;
 }
 form#registration_form {width:300px; margin:0 auto;}
 form#registration_form div.form_element {width:100%; text-align:center; margin: 12px 0; padding:10px 0;}
@@ -75,8 +75,20 @@ form#registration_form div.form_element input {height:18px; font-size:13px; floa
 form#registration_form div.form_element label {float:left;}
 
 form#change_profile_form {width:300px; margin:0 auto;}
-form#change_profile_form div.form_element {width:100%; text-align:center; margin: 12px 0; padding:10px 0;}
-form#change_profile_form div.form_element input {height:18px; font-size:13px; float:right;}
+form#change_profile_form div.form_element {
+    width:100%; 
+    text-align:center; 
+    margin: 12px 0; 
+    padding:10px 0; 
+}
+form#change_profile_form div.form_element input:not([type=button]):not([type=submit]){
+    height:18px; 
+    font-size:13px; 
+    float:right;
+    background-color: #CCC;
+    border: 1px;
+    padding: 3px;
+}
 form#change_profile_form div.form_element label {float:left;}
 
 #profile_box{width:675px;float:left; padding-top: 10px;}
