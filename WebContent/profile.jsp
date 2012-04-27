@@ -101,12 +101,12 @@
                     
                                         <div class="form_element show_on_edit">
                         <label for="password_input">Old Password: </label> <input
-                            type="password" name="password" id="password_input" />
+                            type="password" name="old_password" id="password_input" />
                     </div>
 
                     <div class="form_element show_on_edit">
                         <label for="password_input">New Password: </label> <input
-                            type="password" name="password" id="password_input" />
+                            type="password" name="new_password" id="password_input" />
                     </div>
 
                     <div class="form_element show_on_edit">
