@@ -7,7 +7,9 @@
             <minimum-ant-version>1.6.5</minimum-ant-version>
             <web-module-libraries/>
             <web-module-additional-libraries/>
-            <source-roots/>
+            <source-roots>
+                <root id="src.src.dir"/>
+            </source-roots>
             <test-roots/>
         </data>
     </configuration>

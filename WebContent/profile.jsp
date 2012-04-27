@@ -6,8 +6,10 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
     <head>
+        <script src="jQuery.js" type="text/javascript"></script>
+        <script src="change_profile_value.js" type="text/javascript"></script>
         <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-        <title>Insert title here</title>
+        <title>Profile</title>
         <title>Binghamton Food Co-op</title>
         <link rel='stylesheet' href='style.css' />
     </head>
@@ -78,43 +80,47 @@
 
             <cs345:box title="Profile" id="profile_box">
 
-               <form id="change_profile_form" action="change_profile" method="POST" readonly="readonly">   <!-- action defined later-->
+                <form id="change_profile_form" action="change_profile" method="POST" readonly="readonly">   <!-- action defined later-->
                     <div class="form_element">
-                        <label for="first_name_input">First Name: </label> <input
-                            type="text" name="first_name" id="first_name_input" />
+                        <label for="first_name_input">First Name: </label> 
+                        <input type="text" name="first_name" id="first_name_input" value="Oren"/>
                     </div>
                     <div class="form_element">
-                        <label for="last_name_input">Last Name: </label> <input
-                            type="text" name="last_name" id="last_name_input" />
+                        <label for="last_name_input">Last Name: </label> 
+                        <input type="text" name="last_name" id="last_name_input" value="Rasekh"/>
                     </div>
                     <div class="form_element">
-                        <label for="email_input">Email Address: </label> <input
-                            type="text" name="email" id="email_input" />
+                        <label for="email_input">Email Address: </label> 
+                        <input type="text" name="email" id="email_input" value="orasekh1@binghamton.edu"/>
                     </div>
 
-                   <div class="form_element">
+                    <div class="form_element">
+                        <label for="bucs_num_input">Bucs Number: </label>
+                        <input type="text" name="bucs_num" id="bucs_num_input" value="123 456 7890"/>
+                    </div>
+                    
+                                        <div class="form_element show_on_edit">
                         <label for="password_input">Old Password: </label> <input
-                            type="password" name="password" id="password_input" />
-                    </div>
-                   
-                    <div class="form_element">
-                        <label for="password_input">New Password: </label> <input
-                            type="password" name="password" id="password_input" />
+                            type="password" name="old_password" id="password_input" />
                     </div>
 
-                    <div class="form_element">
+                    <div class="form_element show_on_edit">
+                        <label for="password_input">New Password: </label> <input
+                            type="password" name="new_password" id="password_input" />
+                    </div>
+
+                    <div class="form_element show_on_edit">
                         <label for="confirm_password_input">Confirm Password: </label> <input
                             type="password" name="confirm_password"
                             id="confirm_password_input" />
                     </div>
 
-                    <div class="form_element">
-                        <label for="bucs_num_input">Bucs Number: </label>
-                        <input type="text" name="bucs_num" id="bucs_num_input" />
+                    <div class="form_element hide_on_edit">
+                        <input id="edit_profile" type="button" value="Edit Profile" />
                     </div>
 
-                    <div class="form_element">
-                        <input type="submit" value="Submit" />
+                    <div class="form_element show_on_edit">
+                        <input type="submit" value="Save Profile" />
                     </div>
                 </form>
 
