@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $("form#change_profile_form div.form_element input").attr("readonly", "readonly");
+    $("form#change_profile_form div.form_element input:not([type='button']):not([type='submit'])").attr("readonly", "readonly");
     $(".show_on_edit").css("display", "none");
 
     //click edit profile button
