@@ -26,13 +26,13 @@
     <url-pattern>/register</url-pattern>
   </servlet-mapping>
   
-    <servlet>
+   <servlet>
     <servlet-name>EditProfile</servlet-name>
     <servlet-class>cs345.servlets.ProfileEditor</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>EditProfile</servlet-name>
-    <url-pattern>/EditProfile</url-pattern>
+    <url-pattern>/change_profile</url-pattern>
   </servlet-mapping>
   
   
