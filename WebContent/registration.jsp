@@ -59,7 +59,7 @@
 	<!--Begin Page Content-->
 	<div class="container">
 
-		<cs345:box title="Registeration" id="registration_box">
+		<cs345:box title="Registration" id="registration_box">
 			<div id="registration_form_box">
 				<form id="registration_form" action="register" method="POST">
 					<div class="form_element">
