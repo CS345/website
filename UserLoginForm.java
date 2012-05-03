@@ -59,7 +59,7 @@ public class UserLoginForm extends HttpServlet {
 		Connection con = DBConntest.getConnection();
 		try {
 			sql = con.createStatement();
-			
+		
 			String password = request.getParameter("password");
 			MessageDigest md = MessageDigest.getInstance("MD5");
 			md.update(password.getBytes(),0,password.length());
@@ -68,11 +68,14 @@ public class UserLoginForm extends HttpServlet {
 			rs = sql.executeQuery("Select * FROM users WHERE " +
 					" email='"+ request.getParameter("email")+"' and "+
 					" password='"+ password_md5+"'");	
-			if (rs.next()&&rs.getInt("status")==1){
+			rs.next();
+			
+			if (rs.getInt("status")!=0){
 				request.getSession().setAttribute("isLogin", "true");
 				request.getSession().setAttribute("email", request.getParameter("email"));
 				out.println("hello, "+rs.getString("firstname"));
 			}
+			System.out.println("hello3 ");
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
