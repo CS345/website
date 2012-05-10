@@ -1,0 +1,8 @@
+@charset "utf-8";
+
+.storeTitle {
+	color: #FF0000;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}

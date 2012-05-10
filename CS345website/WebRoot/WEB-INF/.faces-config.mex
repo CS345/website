@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JSFFlowViewLayout version="1.0">
+  <Drawing gridVisible="true" snapOn="true" />
+  <JSFFlowResource path="" location="339,0" dimension="40,36" />
+  <JSFFlowResource path="/a.jsp" location="0,126" dimension="80,36" />
+  <JSFFlowResource path="/WEB-INF/adminIndex.jsp" location="155,126" dimension="182,36" />
+  <JSFFlowResource path="/WEB-INF/displayOrders.jsp" location="5,237" dimension="200,36" />
+  <JSFFlowResource path="/WEB-INF/registerProduct.jsp" location="280,237" dimension="212,36" />
+  <JSFFlowNavigationCase id=",/a.jsp,toIndex,&lt;empty&gt;" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="339,18" />
+      <AbsolutePoint location="40,18" />
+      <AbsolutePoint location="40,126" />
+    </AutomaticBendpoints>
+  </JSFFlowNavigationCase>
+  <JSFFlowNavigationCase id="/WEB-INF/adminIndex.jsp,/WEB-INF/displayOrders.jsp,displayOrders,&lt;empty&gt;" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="197,162" />
+      <AbsolutePoint location="197,237" />
+    </AutomaticBendpoints>
+  </JSFFlowNavigationCase>
+  <JSFFlowNavigationCase id="/WEB-INF/adminIndex.jsp,/WEB-INF/registerProduct.jsp,registerProduct,&lt;empty&gt;" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="287,162" />
+      <AbsolutePoint location="287,237" />
+    </AutomaticBendpoints>
+  </JSFFlowNavigationCase>
+</JSFFlowViewLayout>
+

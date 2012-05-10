@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee 
+	http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+	
+	<context-param>
+           <param-name>rooturl</param-name>
+           <param-value>localhost:8080/guestjsfdemo/</param-value>
+  	</context-param>
+  	<context-param>
+           <param-name>rootdwr</param-name>
+           <param-value>/guestjsfdemo/</param-value>
+  	</context-param>
+  	<context-param>
+          <param-name>server</param-name>
+        <!--  <param-value>www.meiweiwu.com/</param-value>-->
+       <param-value>localhost:8080/guestjsfdemo/</param-value>
+  	</context-param>
+  	
+  	<context-param>
+        <param-name>fuwuqiphone</param-name>
+       	<param-value>13581679416</param-value>
+  	</context-param>
+  	<context-param>
+        <param-name>adminphone</param-name>
+       	<param-value>13581679416</param-value>
+  	</context-param>
+
+	<welcome-file-list> 
+        <welcome-file>index.jsp</welcome-file> 
+    	</welcome-file-list>
+
+	<session-config>
+		<session-timeout>60</session-timeout>
+	</session-config>
+
+
+	  <servlet>
+	    <servlet-name>GetBuildings</servlet-name>
+	    <servlet-class>servlets.GetBuildings</servlet-class>
+	  </servlet>
+	   <servlet-mapping>
+	    <servlet-name>GetBuildings</servlet-name>
+	    <url-pattern>/GetBuildings</url-pattern>
+	  </servlet-mapping>
+	   
+	  <servlet>
+	    <servlet-name>GetUserNews</servlet-name>
+	    <servlet-class>servlets.GetUserNews</servlet-class>
+	  </servlet>
+	   <servlet-mapping>
+	    <servlet-name>GetUserNews</servlet-name>
+	    <url-pattern>/GetUserNews</url-pattern>
+	  </servlet-mapping> 
+	  
+	  <servlet>
+	    <servlet-name>GetReceivedSms</servlet-name>
+	    <servlet-class>servlets.GetReceivedSms</servlet-class>
+	  </servlet>
+	   <servlet-mapping>
+	    <servlet-name>GetReceivedSms</servlet-name>
+	    <url-pattern>/GetReceivedSms</url-pattern>
+	  </servlet-mapping>
+	  
+	   <servlet>
+	    <servlet-name>ServerReceiveSms</servlet-name>
+	    <servlet-class>servlets.ServerReceiveSms</servlet-class>
+	  </servlet>
+	   <servlet-mapping>
+	    <servlet-name>ServerReceiveSms</servlet-name>
+	    <url-pattern>/ServerReceiveSms</url-pattern>
+	  </servlet-mapping>
+	  
+	
+	<servlet>
+	    <servlet-name>GetMyOrders</servlet-name>
+	    <servlet-class>servlets.GetMyOrders</servlet-class>
+	  </servlet>
+	   <servlet-mapping>
+	    <servlet-name>GetMyOrders</servlet-name>
+	    <url-pattern>/GetMyOrders</url-pattern>
+	  </servlet-mapping>
+	  
+	  <servlet>
+	    <servlet-name>GetCategorys</servlet-name>
+	    <servlet-class>servlets.GetCategorys</servlet-class>
+	  </servlet>
+	   <servlet-mapping>
+	    <servlet-name>GetCategorys</servlet-name>
+	    <url-pattern>/GetCategorys</url-pattern>
+	  </servlet-mapping>
+	  
+	  <servlet>
+	    <servlet-name>ZjGetOrders</servlet-name>
+	    <servlet-class>servlets.ZjGetOrders</servlet-class>
+	  </servlet>
+	   <servlet-mapping>
+	    <servlet-name>ZjGetOrders</servlet-name>
+	    <url-pattern>/ZjGetOrders</url-pattern>
+	  </servlet-mapping>
+	  
+	<servlet>
+	    <servlet-name>WapUserAlter</servlet-name>
+	    <servlet-class>com.andrew.wap.WapUserAlter</servlet-class>
+	  </servlet>
+	   <servlet-mapping>
+	    <servlet-name>WapUserAlter</servlet-name>
+	    <url-pattern>/WapUserAlter</url-pattern>
+	</servlet-mapping>
+	<servlet>
+	    <servlet-name>WapUserLoginView</servlet-name>
+	    <servlet-class>com.andrew.wap.WapUserLoginView</servlet-class>
+	  </servlet>
+	   <servlet-mapping>
+	    <servlet-name>WapUserLoginView</servlet-name>
+	    <url-pattern>/WapUserLoginView</url-pattern>
+	</servlet-mapping>
+	<servlet>
+	    <servlet-name>WapSendOrder</servlet-name>
+	    <servlet-class>com.andrew.wap.WapSendOrder</servlet-class>
+	  </servlet>
+	<servlet-mapping>
+	    <servlet-name>WapSendOrder</servlet-name>
+	    <url-pattern>/WapSendOrder</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+	    <servlet-name>WapDeleteFromCart</servlet-name>
+	    <servlet-class>com.andrew.wap.WapDeleteFromCart</servlet-class>
+	  </servlet>
+	   <servlet-mapping>
+	    <servlet-name>WapDeleteFromCart</servlet-name>
+	    <url-pattern>/WapDeleteFromCart</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	    <servlet-name>WapUserLogin</servlet-name>
+	    <servlet-class>com.andrew.wap.WapUserLogin</servlet-class>
+	  </servlet>
+	   <servlet-mapping>
+	    <servlet-name>WapUserLogin</servlet-name>
+	    <url-pattern>/WapUserLogin</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	    <servlet-name>WapStore</servlet-name>
+	    <servlet-class>com.andrew.wap.WapStore</servlet-class>
+	  </servlet>
+	   <servlet-mapping>
+	    <servlet-name>WapStore</servlet-name>
+	    <url-pattern>/WapStore</url-pattern>
+	</servlet-mapping>
+	
+		<servlet>
+	    <servlet-name>WapProduct</servlet-name>
+	    <servlet-class>com.andrew.wap.WapProduct</servlet-class>
+	  </servlet>
+	   <servlet-mapping>
+	    <servlet-name>WapProduct</servlet-name>
+	    <url-pattern>/WapProduct</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	    <servlet-name>WapAddToCart</servlet-name>
+	    <servlet-class>com.andrew.wap.WapAddToCart</servlet-class>
+	  </servlet>
+	   <servlet-mapping>
+	    <servlet-name>WapAddToCart</servlet-name>
+	    <url-pattern>/WapAddToCart</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	    <servlet-name>WapCartDisplay</servlet-name>
+	    <servlet-class>com.andrew.wap.WapCartDisplay</servlet-class>
+	  </servlet>
+	   <servlet-mapping>
+	    <servlet-name>WapCartDisplay</servlet-name>
+	    <url-pattern>/WapCartDisplay</url-pattern>
+	</servlet-mapping>
+
+	
+	<servlet>
+	    <servlet-name>GetUserInfo</servlet-name>
+	    <servlet-class>servlets.GetUserInfo</servlet-class>
+	  </servlet>
+	   <servlet-mapping>
+	    <servlet-name>GetUserInfo</servlet-name>
+	    <url-pattern>/GetUserInfo</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	    <servlet-name>AdvertiserGetOrders</servlet-name>
+	    <servlet-class>servlets.AdvertiserGetOrders</servlet-class>
+	  </servlet>
+	   <servlet-mapping>
+	    <servlet-name>AdvertiserGetOrders</servlet-name>
+	    <url-pattern>/AdvertiserGetOrders</url-pattern>
+	  </servlet-mapping>
+	  
+	  <servlet>
+	    <servlet-name>GetProducts</servlet-name>
+	    <servlet-class>servlets.GetProducts</servlet-class>
+	  </servlet>
+	   <servlet-mapping>
+	    <servlet-name>GetProducts</servlet-name>
+	    <url-pattern>/GetProducts</url-pattern>
+	  </servlet-mapping>
+	  
+	  <servlet>
+	    <servlet-name>GetStoreInfo</servlet-name>
+	    <servlet-class>servlets.GetStoreInfo</servlet-class>
+	  </servlet>
+	   <servlet-mapping>
+	    <servlet-name>GetStoreInfo</servlet-name>
+	    <url-pattern>/GetStoreInfo</url-pattern>
+	  </servlet-mapping>
+	  	  
+	  <servlet>
+	    <servlet-name>GetComments</servlet-name>
+	    <servlet-class>servlets.GetComments</servlet-class>
+	  </servlet>
+	   <servlet-mapping>
+	    <servlet-name>GetComments</servlet-name>
+	    <url-pattern>/GetComments</url-pattern>
+	  </servlet-mapping>
+	  
+	  <servlet>
+	    <servlet-name>GetStores</servlet-name>
+	    <servlet-class>servlets.GetStores</servlet-class>
+	  </servlet>
+	   <servlet-mapping>
+	    <servlet-name>GetStores</servlet-name>
+	    <url-pattern>/GetStores</url-pattern>
+	  </servlet-mapping>
+	  
+	  <servlet>
+	    <servlet-name>GetStoresJ</servlet-name>
+	    <servlet-class>servlets.GetStoresJ</servlet-class>
+	  </servlet>
+	   <servlet-mapping>
+	    <servlet-name>GetStoresJ</servlet-name>
+	    <url-pattern>/GetStoresJ</url-pattern>
+	  </servlet-mapping>
+	  
+	  <servlet>
+	    <servlet-name>GetOrders</servlet-name>
+	    <servlet-class>servlets.GetOrders</servlet-class>
+	  </servlet>
+	   <servlet-mapping>
+	    <servlet-name>GetOrders</servlet-name>
+	    <url-pattern>/GetOrders</url-pattern>
+	  </servlet-mapping>
+  
+   <servlet>
+	    <servlet-name>UserRegisterForm</servlet-name>
+	    <servlet-class>servlets.UserRegisterForm</servlet-class>
+	  </servlet>
+	   <servlet-mapping>
+	    <servlet-name>UserRegisterForm</servlet-name>
+	    <url-pattern>/UserRegisterForm</url-pattern>
+	  </servlet-mapping>
+	  
+  
+    <servlet>
+	    <servlet-name>UserLoginForm</servlet-name>
+	    <servlet-class>servlets.UserLoginForm</servlet-class>
+	  </servlet>
+	   <servlet-mapping>
+	    <servlet-name>UserLoginForm</servlet-name>
+	    <url-pattern>/UserLoginForm</url-pattern>
+	  </servlet-mapping>
+	  
+	   <servlet>
+	    <servlet-name>UserVerifyForm</servlet-name>
+	    <servlet-class>servlets.UserVerifyForm</servlet-class>
+	  </servlet>
+	   <servlet-mapping>
+	    <servlet-name>UserVerifyForm</servlet-name>
+	    <url-pattern>/UserVerifyForm</url-pattern>
+	  </servlet-mapping>
+	  
+  	  <servlet>
+	    <servlet-name>GetCartProducts</servlet-name>
+	    <servlet-class>servlets.GetCartProducts</servlet-class>
+	  </servlet>
+	  <servlet-mapping>
+	    <servlet-name>GetCartProducts</servlet-name>
+	    <url-pattern>/GetCartProducts</url-pattern>
+	  </servlet-mapping>
+
+
+	<servlet>
+	  <servlet-name>dwr-invoker</servlet-name>
+	  <servlet-class>org.directwebremoting.servlet.DwrServlet</servlet-class>
+	  <init-param>
+	     <param-name>debug</param-name>
+	     <param-value>true</param-value>
+	  </init-param>
+	</servlet>
+
+	<servlet-mapping>
+	  <servlet-name>dwr-invoker</servlet-name>
+	  <url-pattern>/dwr/*</url-pattern>
+	</servlet-mapping>
+
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>/WEB-INF/applicationContext.xml</param-value>
+	</context-param>
+
+
+</web-app>

@@ -1,0 +1,173 @@
+#main_body {
+	height: auto;
+	width: 780px;
+}
+#CategoryList {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 20px;
+	color: #333333;
+	padding: 5px;
+	float: left;
+	height: 200px;
+	width: 100px;
+}
+
+.leftbutton {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	height: 20px;
+	width: 100px;
+    color: #333333;
+	cursor:pointer;
+}
+
+.leftbuttondown{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	height: 25px;
+	line-height: 25px;
+	width: 100px;
+	background-color: #F2F2F2;
+	font-weight: bold;
+	color: #333333;
+	padding-left:10px;
+	border: 1px solid #999999;
+}
+
+.buldingbt {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 20px;
+	color: #003399;
+	text-align:center;
+	background-color: #FFFFFF;
+	border: 1px dashed #CCCCCC;
+	height: 20px;
+	width: 150px;
+	margin: 2px;
+	cursor:pointer;
+	float: left;
+}
+
+.buldingbtover{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 20px;
+	color: #FFFFFF;
+	text-align:center;
+	background-color: #003366;
+	border: 1px dashed #CCCCCC;
+	height: 20px;
+	width: 150px;
+	margin: 2px;
+	cursor:pointer;
+	float: left;
+}
+
+/*搜索面版样式*/
+.normal {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	width: 100px;
+	color: #000000;
+	float:left;
+}
+
+.textbold {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	font-weight: bold;
+}
+
+.placeholder {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	width: 100px;
+	color: #CCCCCC;
+    float:left;
+}
+
+.resultList { /*搜索结果列表*/
+	background-color: #F4FAFF;
+	padding: 5px;
+	height: auto;
+	width: 520px;
+}
+
+.hitiInfo { /*提示信息*/
+   background-color: #FFFFFF; 
+   font-size:12px; 
+   height:20px; 
+   line-height: 20px;
+   padding-left:10px;
+}
+
+/*标准字体*/
+
+.tblack
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 20px;
+	color: #333333;
+}
+
+.tgray
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 20px;
+	color: #666666;
+}
+
+/*前一页、后一页按扭*/
+
+.pagebt
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FF6600;
+	background-color: #FFFFFF;
+	border: 1px solid #FF6600;
+	cursor:pointer;
+}
+
+.pagebtover
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FFFFFF;
+	background-color: #FF6600;
+	border: 1px solid #FF6600;
+	cursor:pointer;
+}
+
+/*窗体样式*/
+#Bulidingwindow {
+  width: 530px;
+  height:auto;
+}
+
+.windowtitle {
+	background-image: url(../images/windowtitleback.gif);
+	height: 30px;
+	width: 520px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFFFFF;
+	padding-left: 10px;
+	border: 1px solid #0099CC;
+	line-height: 30px;
+}
+
+.windowbody {
+	height: auto;
+	width: 530px;
+	border: 1px solid #0099CC;
+	background-color: #FFFFFF;
+}
+
+

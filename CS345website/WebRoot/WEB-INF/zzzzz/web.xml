@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee 
+	http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+	
+	<context-param>
+           <param-name>rooturl</param-name>
+           <param-value>www.meiweiwu.com/</param-value>
+  	</context-param>
+  	<context-param>
+           <param-name>rootdwr</param-name>
+           <param-value>/</param-value>
+  	</context-param>
+	<welcome-file-list> 
+        <welcome-file>index.jsp</welcome-file> 
+    	</welcome-file-list>
+
+	<session-config>
+		<session-timeout>5</session-timeout>
+	</session-config>
+	<listener>
+    	<listener-class>servlets.UserInfo</listener-class>
+	</listener>
+
+	<servlet>
+	    <servlet-name>WapUserLoginView</servlet-name>
+	    <servlet-class>com.andrew.wap.WapUserLoginView</servlet-class>
+	  </servlet>
+	   <servlet-mapping>
+	    <servlet-name>WapUserLoginView</servlet-name>
+	    <url-pattern>/WapUserLoginView</url-pattern>
+	</servlet-mapping>
+	<servlet>
+	    <servlet-name>WapSendOrder</servlet-name>
+	    <servlet-class>com.andrew.wap.WapSendOrder</servlet-class>
+	  </servlet>
+	   <servlet-mapping>
+	    <servlet-name>WapSendOrder</servlet-name>
+	    <url-pattern>/WapSendOrder</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	    <servlet-name>WapDeleteFromCart</servlet-name>
+	    <servlet-class>com.andrew.wap.WapDeleteFromCart</servlet-class>
+	  </servlet>
+	   <servlet-mapping>
+	    <servlet-name>WapDeleteFromCart</servlet-name>
+	    <url-pattern>/WapDeleteFromCart</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	    <servlet-name>WapUserLogin</servlet-name>
+	    <servlet-class>com.andrew.wap.WapUserLogin</servlet-class>
+	  </servlet>
+	   <servlet-mapping>
+	    <servlet-name>WapUserLogin</servlet-name>
+	    <url-pattern>/WapUserLogin</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	    <servlet-name>WapStore</servlet-name>
+	    <servlet-class>com.andrew.wap.WapStore</servlet-class>
+	  </servlet>
+	   <servlet-mapping>
+	    <servlet-name>WapStore</servlet-name>
+	    <url-pattern>/WapStore</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	    <servlet-name>WapAddToCart</servlet-name>
+	    <servlet-class>com.andrew.wap.WapAddToCart</servlet-class>
+	  </servlet>
+	   <servlet-mapping>
+	    <servlet-name>WapAddToCart</servlet-name>
+	    <url-pattern>/WapAddToCart</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	    <servlet-name>WapCartDisplay</servlet-name>
+	    <servlet-class>com.andrew.wap.WapCartDisplay</servlet-class>
+	  </servlet>
+	   <servlet-mapping>
+	    <servlet-name>WapCartDisplay</servlet-name>
+	    <url-pattern>/WapCartDisplay</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	    <servlet-name>WapAdvertiserLogin</servlet-name>
+	    <servlet-class>com.andrew.wap.WapAdvertiserLogin</servlet-class>
+	  </servlet>
+	   <servlet-mapping>
+	    <servlet-name>WapAdvertiserLogin</servlet-name>
+	    <url-pattern>/WapAdvertiserLogin</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	    <servlet-name>WapProcessOrders</servlet-name>
+	    <servlet-class>com.andrew.wap.WapProcessOrders</servlet-class>
+	  </servlet>
+	   <servlet-mapping>
+	    <servlet-name>WapProcessOrders</servlet-name>
+	    <url-pattern>/WapProcessOrders</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	    <servlet-name>WapGetOrders</servlet-name>
+	    <servlet-class>com.andrew.wap.WapGetOrders</servlet-class>
+	  </servlet>
+	   <servlet-mapping>
+	    <servlet-name>WapGetOrders</servlet-name>
+	    <url-pattern>/WapGetOrders</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	    <servlet-name>GetUserInfo</servlet-name>
+	    <servlet-class>servlets.GetUserInfo</servlet-class>
+	  </servlet>
+	   <servlet-mapping>
+	    <servlet-name>GetUserInfo</servlet-name>
+	    <url-pattern>/GetUserInfo</url-pattern>
+	</servlet-mapping>
+	
+	  <servlet>
+	    <servlet-name>GetProducts</servlet-name>
+	    <servlet-class>servlets.GetProducts</servlet-class>
+	  </servlet>
+	   <servlet-mapping>
+	    <servlet-name>GetProducts</servlet-name>
+	    <url-pattern>/GetProducts</url-pattern>
+	  </servlet-mapping>
+	  
+	  <servlet>
+	    <servlet-name>GetStores</servlet-name>
+	    <servlet-class>servlets.GetStores</servlet-class>
+	  </servlet>
+	   <servlet-mapping>
+	    <servlet-name>GetStores</servlet-name>
+	    <url-pattern>/GetStores</url-pattern>
+	  </servlet-mapping>
+	  
+	  <servlet>
+	    <servlet-name>GetOrders</servlet-name>
+	    <servlet-class>servlets.GetOrders</servlet-class>
+	  </servlet>
+	   <servlet-mapping>
+	    <servlet-name>GetOrders</servlet-name>
+	    <url-pattern>/GetOrders</url-pattern>
+	  </servlet-mapping>
+  
+  	  <servlet>
+	    <servlet-name>GetCartProducts</servlet-name>
+	    <servlet-class>servlets.GetCartProducts</servlet-class>
+	  </servlet>
+	  <servlet-mapping>
+	    <servlet-name>GetCartProducts</servlet-name>
+	    <url-pattern>/GetCartProducts</url-pattern>
+	  </servlet-mapping>
+
+
+	<servlet>
+	  <servlet-name>dwr-invoker</servlet-name>
+	  <servlet-class>org.directwebremoting.servlet.DwrServlet</servlet-class>
+	  <init-param>
+	     <param-name>debug</param-name>
+	     <param-value>true</param-value>
+	  </init-param>
+	</servlet>
+
+	<servlet-mapping>
+	  <servlet-name>dwr-invoker</servlet-name>
+	  <url-pattern>/dwr/*</url-pattern>
+	</servlet-mapping>
+
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>/WEB-INF/applicationContext.xml</param-value>
+	</context-param>
+
+
+</web-app>
